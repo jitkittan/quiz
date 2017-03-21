@@ -11,8 +11,21 @@ only if both are negative.
 
 
 def pos_neg(a, b, negative):
-    pass
+    """
+    :type a: int
+    :type b: int
+    :type negative: str
+    """
+    if a<0 and b>0 and negative==False:
+        pos_neg(a,b,negative)= True
+    elif a>0 and b<0 and negative==True:
+        pos_neg(a, b, negative)= False
+    elif a+b>0 and negative==False:
+        pos_neg(a,b,negative)=False
+    else:
+        pos_neg(a,b,negative)=True
 
+    return pos_neg(a,b,negative)
 
 # Expected outputs:
 
@@ -46,7 +59,19 @@ years (for example, 2000).
 
 
 def leap_year(year):
-    pass
+
+year=
+
+while (year%4=0):
+
+    if (year%100>0):
+        leap_year(s)=True
+
+
+    else:
+        False
+
+
 
 
 # When you've completed your function, uncomment the
